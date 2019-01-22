@@ -13,12 +13,12 @@ class CreateProjectTable extends Migration
      */
     public function up()
     {
-        Schema::create('project', function (Blueprint $table) {
+        Schema::create('Projects', function (Blueprint $table) {
             $table->increments('project_id');
             $table->unsignedInteger('account_id');
-            $table->foreign('account_id')->references('account_id')->on('account');
+            $table->foreign('account_id')->references('account_id')->on('Accounts');
             $table->unsignedInteger('team_id');
-            $table->foreign('team_id')->references('team_id')->on('team');
+            $table->foreign('team_id')->references('team_id')->on('Teams');
             $table->string('name');
             $table->string('description');
             $table->string('status');

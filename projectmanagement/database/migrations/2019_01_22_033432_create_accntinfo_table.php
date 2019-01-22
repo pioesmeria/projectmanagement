@@ -13,7 +13,7 @@ class CreateAccntinfoTable extends Migration
      */
     public function up()
     {
-        Schema::create('account_info', function (Blueprint $table) {
+        Schema::create('AccountInfos', function (Blueprint $table) {
             $table->increments('account_info_id');
             $table->string('firstName');
             $table->string('lastName');

@@ -13,12 +13,12 @@ class CreateProjectTaskTable extends Migration
      */
     public function up()
     {
-        Schema::create('projectTask', function (Blueprint $table) {
+        Schema::create('ProjectTasks', function (Blueprint $table) {
             $table->increments('projectTask_id');
             $table->unsignedInteger('task_id');
-            $table->foreign('task_id')->references('task_id')->on('task');
+            $table->foreign('task_id')->references('task_id')->on('Tasks');
             $table->unsignedInteger('project_id');
-            $table->foreign('project_id')->references('project_id')->on('project');
+            $table->foreign('project_id')->references('project_id')->on('Projects');
             $table->timestamps();
         });
     }

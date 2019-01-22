@@ -13,10 +13,10 @@ class CreateTeamTable extends Migration
      */
     public function up()
     {
-        Schema::create('team', function (Blueprint $table) {
+        Schema::create('Teams', function (Blueprint $table) {
             $table->increments('team_id');
             $table->unsignedInteger('account_id');
-            $table->foreign('account_id')->references('account_id')->on('account');
+            $table->foreign('account_id')->references('account_id')->on('Accounts');
             $table->string('teamName');
             $table->timestamps();
         });

@@ -13,7 +13,7 @@ class CreateAccnttypeTable extends Migration
      */
     public function up()
     {
-        Schema::create('user_type', function (Blueprint $table) {
+        Schema::create('UserTypes', function (Blueprint $table) {
             $table->increments('id');
             $table->string('user_type');
             $table->timestamps();
