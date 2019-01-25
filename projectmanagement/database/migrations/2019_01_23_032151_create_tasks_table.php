@@ -15,6 +15,8 @@ class CreateTasksTable extends Migration
     {
         Schema::create('tasks', function (Blueprint $table) {
             $table->increments('task_id');
+            $table->unsignedInteger('account_id')->nullable($value = true);
+            $table->foreign('account_id')->references('account_id')->on('accounts');
             $table->string('task_description', 100);
             $table->boolean('status');
             $table->timestamps();
