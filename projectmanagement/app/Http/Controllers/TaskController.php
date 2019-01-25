@@ -15,7 +15,9 @@ class TaskController extends Controller
     public function index()
     {
         //get Tasks
-        $tasks = Task::paginate(15);
+        $tasks = Task::orderBy('status', 'ASC')
+                    ->orderBy('updated_at', 'ASC')
+                    ->paginate(15);
         
         //return collection of Tasks as a resource
         return TaskResource::collection($tasks); #collection when returning list
@@ -31,14 +33,14 @@ class TaskController extends Controller
     {
         //
         $task = $request->isMethod('put') ? Task::findOrFail
-        ($request->Task_id) : new Task;
+        ($request->task_id) : new Task;
 
-        $task->id = $request->input('Task_id');
-        $task->title = $request->input('title');
-        $task->body = $request->input('body');
+        $task->task_id = $request->input('task_id');
+        $task->task_description = $request->input('task_description');
+        $task->status = $request->input('status');
         
         if($task->save()){
-            return new TaskResource($Task);
+            return new TaskResource($task);
         }
     }
 
@@ -55,6 +57,28 @@ class TaskController extends Controller
         
         //return single Task as a resource
         return new TaskResource($task); 
+    }
+/**
+     * Show the form for editing the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function edit($id)
+    {
+        //
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, $id)
+    {
+        //
     }
 
 

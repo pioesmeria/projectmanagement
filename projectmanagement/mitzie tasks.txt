@@ -1,9 +1,10 @@
 tasks
-	create
-	read status done sort according created_time
-	read status ongoing sort according updated_time
-	update
-	delete
+	*create
+	*read
+		read status done sort according created_time
+		read status ongoing sort according updated_time
+	*update
+	*delete
 	patch status
 
 team
