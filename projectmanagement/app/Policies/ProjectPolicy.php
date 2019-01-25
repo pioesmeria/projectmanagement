@@ -2,7 +2,7 @@
 
 namespace App\Policies;
 
-use App\User;
+use App\Account;
 use App\Project;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
@@ -17,9 +17,9 @@ class ProjectPolicy
      * @param  \App\Project  $project
      * @return mixed
      */
-    public function view(User $user, Project $project)
+    public function view(Account $account, Project $project)
     {
-        return $project->account_id == $user->account_id;
+        return $project->account_id == $account->account_id;
     }
 
     /**
