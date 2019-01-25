@@ -420,6 +420,8 @@ class ComposerStaticInit6a9a7df5ce22e3f2274c8362d03be7f1
     );
 
     public static $classMap = array (
+        'AccountInfosTableSeeder' => __DIR__ . '/../..' . '/database/seeds/AccountInfosTableSeeder.php',
+        'AccountsTableSeeder' => __DIR__ . '/../..' . '/database/seeds/AccountsTableSeeder.php',
         'App\\Account' => __DIR__ . '/../..' . '/app/Account.php',
         'App\\AccountInfo' => __DIR__ . '/../..' . '/app/AccountInfo.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
@@ -3040,6 +3042,8 @@ class ComposerStaticInit6a9a7df5ce22e3f2274c8362d03be7f1
         'PhpParser\\Parser\\Tokens' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Parser/Tokens.php',
         'PhpParser\\PrettyPrinterAbstract' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/PrettyPrinterAbstract.php',
         'PhpParser\\PrettyPrinter\\Standard' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/PrettyPrinter/Standard.php',
+        'ProjectTasksTableSeeder' => __DIR__ . '/../..' . '/database/seeds/ProjectTasksTableSeeder.php',
+        'ProjectsTableSeeder' => __DIR__ . '/../..' . '/database/seeds/ProjectsTableSeeder.php',
         'Prophecy\\Argument' => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy/Argument.php',
         'Prophecy\\Argument\\ArgumentsWildcard' => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy/Argument/ArgumentsWildcard.php',
         'Prophecy\\Argument\\Token\\AnyValueToken' => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy/Argument/Token/AnyValueToken.php',
@@ -4037,6 +4041,8 @@ class ComposerStaticInit6a9a7df5ce22e3f2274c8362d03be7f1
         'Symfony\\Polyfill\\Ctype\\Ctype' => __DIR__ . '/..' . '/symfony/polyfill-ctype/Ctype.php',
         'Symfony\\Polyfill\\Mbstring\\Mbstring' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/Mbstring.php',
         'Symfony\\Polyfill\\Php72\\Php72' => __DIR__ . '/..' . '/symfony/polyfill-php72/Php72.php',
+        'TasksTableSeeder' => __DIR__ . '/../..' . '/database/seeds/TasksTableSeeder.php',
+        'TeamsTableSeeder' => __DIR__ . '/../..' . '/database/seeds/TeamsTableSeeder.php',
         'Tests\\CreatesApplication' => __DIR__ . '/../..' . '/tests/CreatesApplication.php',
         'Tests\\Feature\\ExampleTest' => __DIR__ . '/../..' . '/tests/Feature/ExampleTest.php',
         'Tests\\TestCase' => __DIR__ . '/../..' . '/tests/TestCase.php',
@@ -4056,6 +4062,7 @@ class ComposerStaticInit6a9a7df5ce22e3f2274c8362d03be7f1
         'TijsVerkoyen\\CssToInlineStyles\\Css\\Property\\Property' => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src/Css/Property/Property.php',
         'TijsVerkoyen\\CssToInlineStyles\\Css\\Rule\\Processor' => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src/Css/Rule/Processor.php',
         'TijsVerkoyen\\CssToInlineStyles\\Css\\Rule\\Rule' => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src/Css/Rule/Rule.php',
+        'UserTypesTableSeeder' => __DIR__ . '/../..' . '/database/seeds/UserTypesTableSeeder.php',
         'Webmozart\\Assert\\Assert' => __DIR__ . '/..' . '/webmozart/assert/src/Assert.php',
         'Whoops\\Exception\\ErrorException' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Exception/ErrorException.php',
         'Whoops\\Exception\\Formatter' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Exception/Formatter.php',
