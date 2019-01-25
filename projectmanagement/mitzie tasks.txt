@@ -1,0 +1,13 @@
+tasks
+	create
+	read status done sort according created_time
+	read status ongoing sort according updated_time
+	update
+	delete
+	patch status
+
+team
+	create
+	read
+	update
+	delete
