@@ -1,11 +1,27 @@
+Project - ssob
+	show proj
+	all proj has tasks??
+projecttasks
+	show tasks where project	
+
+	C
+	R
+	U
+	D
+
+	PIO - FK cascade
+	need pa ba ng timestamp??
 tasks
 	*create
-	*read
-		read status done sort according created_time
-		read status ongoing sort according updated_time
+	read
+		*read status done sort according created_time
+		*read status ongoing sort according updated_time
+		account_id->fullname
 	*update
 	*delete
-	patch status
+	*patch status, account_id
+	
+
 
 team
 	create

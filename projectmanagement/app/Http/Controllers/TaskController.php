@@ -15,9 +15,7 @@ class TaskController extends Controller
     public function index()
     {
         //get Tasks
-        $tasks = Task::orderBy('status', 'ASC')
-                    ->orderBy('updated_at', 'ASC')
-                    ->paginate(15);
+        $tasks = Task::paginate(15);
         
         //return collection of Tasks as a resource
         return TaskResource::collection($tasks); #collection when returning list
@@ -78,7 +76,8 @@ class TaskController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $task = Task::findOrFail($id);
+        $task->update($request->only('status', 'account_id'));
     }
 
 
