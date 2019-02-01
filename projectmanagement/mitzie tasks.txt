@@ -12,6 +12,7 @@ projecttasks
 	PIO - FK cascade
 	need pa ba ng timestamp??
 tasks
+	show tasks 
 	*create
 	read
 		*read status done sort according created_time
